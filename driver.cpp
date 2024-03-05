@@ -8,7 +8,7 @@ int main(int argc, char* argv []){
     string str;
     string width;
     string height;
-    if(argc ==1 || argc > 4){
+    if(argc ==1 || argc > 5){
         cout << "Incorrect number of arguments.";
         return 1;
     }
@@ -39,6 +39,6 @@ int main(int argc, char* argv []){
     int numEntries = widthVal * heightVal;
     unsigned char * buffer = new unsigned char [numEntries];
     myfile.read((char*)buffer,numEntries);
-    TileManager tileManager(stoi(argv[2]),stoi(argv[1]),(stoi(argv[1])*stoi(argv[1])), widthVal, heightVal, buffer);
+    TileManager tileManager(stoi(argv[2]),stoi(argv[1]),(stoi(argv[1])*stoi(argv[1])), widthVal, heightVal, buffer, argv[4]);
     return 0;
 }
