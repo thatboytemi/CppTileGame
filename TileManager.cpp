@@ -137,7 +137,7 @@ namespace ANXTEM001{
     }
     void TileManager::writeSummary(int xdim, int ydim, std::string summaryName){
         std::ofstream summary;
-        summary.open(summaryName, std::ios::binary);
+        summary.open(summaryName+".pgm", std::ios::binary);
         if(!summary.is_open()){
             std::cout << "Error creating summary file.";
             return ;
