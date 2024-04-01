@@ -1,4 +1,4 @@
-# C++ Assignment 2
+# C++ Tile Game Beginnings
 
 ## Author: Temi Aina
 
